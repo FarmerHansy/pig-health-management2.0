@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20">
+  <!-- 极简紧急求助 - 感叹号 -->
+  <circle cx="10" cy="10" r="6" fill="none" stroke="#f56565" stroke-width="2"/>
+  <line x1="10" y1="7" x2="10" y2="11" stroke="#f56565" stroke-width="2" stroke-linecap="round"/>
+  <circle cx="10" cy="13.5" r="1" fill="#f56565"/>
+</svg>

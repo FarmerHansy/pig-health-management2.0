@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 100 100">
+  <!-- 极简聊天 - 单色线条风格 -->
+  <rect x="20" y="25" width="60" height="50" rx="8" fill="none" stroke="#10b981" stroke-width="3"/>
+  <path d="M60 30 L75 30 L75 45 Z" fill="none" stroke="#10b981" stroke-width="3"/>
+  <circle cx="35" cy="50" r="3" fill="#10b981"/>
+  <circle cx="45" cy="50" r="3" fill="#10b981"/>
+  <circle cx="55" cy="50" r="3" fill="#10b981"/>
+</svg>
