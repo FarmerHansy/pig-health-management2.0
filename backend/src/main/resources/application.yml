@@ -9,7 +9,7 @@ spring:
     driver-class-name: com.mysql.cj.jdbc.Driver
     url: jdbc:mysql://127.0.0.1:3306/pig_health_smart_medicine?serverTimezone=Hongkong&useAffectedRows=true&characterEncoding=utf-8
     username: root               #数据库用户名
-    password:                #数据库密码
+    password: Hsy1314520!               #数据库密码
     type: com.alibaba.druid.pool.DruidDataSource
     initialSize: 5 # 初始化时创建的连接数
     minIdle: 5 # 最小空闲连接数
@@ -128,6 +128,16 @@ knife4j:
 
 # 配置ai
 ai:
+  provider:
+    local-enabled: true
+    openapi-enabled: false
+    fallback-enabled: true
+  openapi:
+    base-url: https://api.deepseek.com
+    api-key: ${DEEPSEEK_API_KEY:sk-c7770f75ff154d42beec5e779e5e70d3}
+    chat:
+      model: deepseek-chat
+      temperature: 0.4
   ollama:
     url: http://127.0.0.1:11434 #这里是我本地部署的ollama默认地址（需要根据你自己的更换）
     chat:
