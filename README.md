@@ -1,8 +1,8 @@
-# 基于RAG的生猪健康管理的智慧医药系统
+# 基于检索增强生成的生猪健康智能诊疗问答与兽药管理系统
 
 ## 项目简介
 
-本项目是一个基于RAG的生猪健康管理的智慧医药系统，集成了AI兽医诊断、疾病管理、药品管理、文章资讯管理等功能模块，旨在通过数字化手段提升生猪养殖的医疗管理水平。系统基于 **SpringBoot3 + RAG +Ollama + Spring AI + DeepSeek + Mysql8.0 + Mybatis-Plus** 技术栈构建，提供智能兽医诊断服务，帮助养殖户或兽医快速识别生猪病情并推荐相应的治疗方案。
+本项目聚焦生猪健康与用药管理，构建了面向养殖场景的检索增强生成（RAG）智能诊疗系统，覆盖 AI 兽医问答、疾病管理、药品管理、文章资讯等核心模块。系统以 **SpringBoot3 + RAG + Ollama + Spring AI + DeepSeek + Mysql8.0 + Mybatis-Plus** 为技术底座，通过知识库检索为回答提供辅助依据，帮助养殖户或兽医更快定位病情并获得可执行的治疗建议。
 
 ## 技术架构
 
@@ -10,7 +10,7 @@
 
 - **后端框架**：SpringBoot 3.3.5、Spring AI、MyBatis Plus
 - **前端框架**：Vue3、JavaScript、Vite、Pinia
-- **AI模型**：Ollama + DeepSeek
+- **AI模型**：Ollama（本地优先）+ DeepSeek（备用线路）
 - **数据库**：MySQL 8.0.33
 - **缓存系统**：Redis
 - **安全框架**：SaToken
@@ -42,7 +42,7 @@
 
 ### AI与向量化支持
 
-项目内置 `KnowledgeInitializer` 组件，使用 Spring AI 的 `VectorStore` 对 `resources/knowledge` 目录下的文档进行读取、切分与向量化处理，支持 txt、md、pdf、docx 等多种格式文档。
+项目内置 `KnowledgeInitializer` 组件，使用 Spring AI 的 `VectorStore` 对 `resources/knowledge` 目录下的文档进行读取、切分与向量化处理，支持 txt、md、pdf、docx 等多种格式文档。模型回答会先检索本地知识库，再结合通用知识生成结果，确保回答有来源可追溯。
 
 ## 项目实现图
 
@@ -115,9 +115,10 @@
 
 ### 2. **智能兽医诊断系统**
 
-- 基于 **Ollama + DeepSeek** 的AI兽医问诊功能
-- 支持自然语言描述生猪症状，AI自动识别可能疾病并提供治疗建议
+- 基于 **Ollama + DeepSeek** 的AI兽医问诊（本地优先，必要时自动切换备用线路）
+- 支持自然语言描述生猪症状，结合知识库检索结果给出诊断建议
 - 疾病相关药品信息智能推荐
+- 创新点：本地模型失败或响应异常时，自动切换至 DeepSeek 备用线路，保证问答可用性与稳定性
 
 ### 3. **疾病管理系统**
 
