@@ -7,13 +7,7 @@ import com.linyi.pig.entity.vo.newsArticles.NewsArticlesAddVo;
 import com.linyi.pig.entity.vo.newsArticles.NewsArticlesQueryVo;
 import com.linyi.pig.entity.vo.newsArticles.NewsArticlesUpdateVo;
 
-/**
-* @Author: linyi
-* @Date: 2025-02-26 08:42:14
-* @ClassName: NewsArticlesService
-* @Version: 1.0
-* @Description: 新闻资讯 服务层
-*/
+
 public interface NewsArticlesService extends IService<NewsArticles> {
     /**
      * 分页查询

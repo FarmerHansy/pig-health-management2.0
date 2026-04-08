@@ -4,13 +4,6 @@ import org.springframework.context.annotation.Configuration;
 import org.springframework.web.servlet.config.annotation.CorsRegistry;
 import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
 
-/**
- * @Author: linyi
- * @Date: 2025/2/14
- * @ClassName: WebConfig
- * @Version: 1.0
- * @Description: 跨域配置
- */
 @Configuration
 public class WebConfig implements WebMvcConfigurer {
 

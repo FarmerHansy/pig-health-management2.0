@@ -10,14 +10,6 @@ import lombok.NoArgsConstructor;
 
 import java.io.Serializable;
 
-/**
-* @Author: linyi
-* @Date: 2025-02-25 17:38:38
-* @ClassName: FeedbackQueryVo
-* @Version: 1.0
-* @Description: 反馈查询实体
-*/
-
 @Data
 @Builder
 @NoArgsConstructor

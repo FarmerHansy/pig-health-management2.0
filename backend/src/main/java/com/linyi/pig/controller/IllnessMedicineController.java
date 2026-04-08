@@ -18,14 +18,6 @@ import java.io.Serializable;
 import java.util.List;
 
 
-/**
-* @Author: linyi
-* @Date: 2025-02-25 17:38:38
-* @ClassName: IllnessMedicineController
-* @Version: 1.0
-* @Description: 疾病-药物 控制层
-*/
-
 @Tag(name = "疾病-药物管理模块")
 @Slf4j
 @Validated

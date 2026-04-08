@@ -10,14 +10,6 @@ import lombok.NoArgsConstructor;
 
 import java.io.Serializable;
 
-/**
-* @Author: linyi
-* @Date: 2025-02-25 17:38:38
-* @ClassName: HistoryQueryVo
-* @Version: 1.0
-* @Description: 操作记录查询实体
-*/
-
 @Data
 @Builder
 @NoArgsConstructor

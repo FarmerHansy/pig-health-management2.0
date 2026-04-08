@@ -30,13 +30,7 @@ import java.time.LocalDate;
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
 
-/**
- * @Author: linyi
- * @Date: 2025/2/25
- * @ClassName: RedisConfig
- * @Version: 1.0
- * @Description: Redis配置类
- */
+
 @Slf4j
 @EnableCaching
 @Configuration

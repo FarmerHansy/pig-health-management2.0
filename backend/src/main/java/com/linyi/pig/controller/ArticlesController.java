@@ -18,13 +18,7 @@ import java.io.Serializable;
 import java.util.List;
 
 
-/**
-* @Author: linyi
-* @Date: 2025-02-26 08:42:14
-* @ClassName: ArticlesController
-* @Version: 1.0
-* @Description: 文章 控制层
-*/
+
 
 @Tag(name = "文章管理模块")
 @Slf4j

@@ -7,13 +7,6 @@ import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
-/**
- * @Author: linyi
- * @Date: 2025/2/25
- * @ClassName: CodeVo
- * @Version: 1.0
- * @Description: 验证码
- */
 @Data
 @Builder
 @NoArgsConstructor

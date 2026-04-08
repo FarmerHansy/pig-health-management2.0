@@ -7,13 +7,7 @@ import com.linyi.pig.entity.vo.history.HistoryAddVo;
 import com.linyi.pig.entity.vo.history.HistoryQueryVo;
 import com.linyi.pig.entity.vo.history.HistoryUpdateVo;
 
-/**
-* @Author: linyi
-* @Date: 2025-02-25 17:38:38
-* @ClassName: HistoryService
-* @Version: 1.0
-* @Description: 操作记录 服务层
-*/
+
 public interface HistoryService extends IService<History> {
     /**
      * 分页查询

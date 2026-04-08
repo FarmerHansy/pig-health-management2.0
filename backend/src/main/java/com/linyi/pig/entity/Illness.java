@@ -14,14 +14,6 @@ import lombok.NoArgsConstructor;
 import java.io.Serializable;
 import java.util.Date;
 
-/**
-* @Author: linyi
-* @Date: 2025-02-25 17:38:38
-* @ClassName: Illness
-* @Version: 1.0
-* @Description: 疾病
-*/
-
 @Data
 @Builder
 @NoArgsConstructor

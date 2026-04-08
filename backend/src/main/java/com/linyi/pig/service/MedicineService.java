@@ -7,13 +7,6 @@ import com.linyi.pig.entity.vo.medicine.MedicineAddVo;
 import com.linyi.pig.entity.vo.medicine.MedicineQueryVo;
 import com.linyi.pig.entity.vo.medicine.MedicineUpdateVo;
 
-/**
-* @Author: linyi
-* @Date: 2025-02-25 17:38:38
-* @ClassName: MedicineService
-* @Version: 1.0
-* @Description: 药品 服务层
-*/
 public interface MedicineService extends IService<Medicine> {
     /**
      * 分页查询

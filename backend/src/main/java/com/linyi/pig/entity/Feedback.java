@@ -14,14 +14,6 @@ import lombok.NoArgsConstructor;
 import java.io.Serializable;
 import java.util.Date;
 
-/**
-* @Author: linyi
-* @Date: 2025-02-25 17:38:38
-* @ClassName: Feedback
-* @Version: 1.0
-* @Description: 反馈
-*/
-
 @Data
 @Builder
 @NoArgsConstructor

@@ -18,13 +18,7 @@ import java.io.Serializable;
 import java.util.List;
 
 
-/**
-* @Author: linyi
-* @Date: 2025-02-25 17:38:38
-* @ClassName: PageviewController
-* @Version: 1.0
-* @Description: 浏览量 控制层
-*/
+
 
 @Tag(name = "浏览量管理模块")
 @Slf4j

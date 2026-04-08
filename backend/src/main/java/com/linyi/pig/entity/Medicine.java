@@ -15,14 +15,6 @@ import java.io.Serializable;
 import java.math.BigDecimal;
 import java.util.Date;
 
-/**
-* @Author: linyi
-* @Date: 2025-02-25 17:38:38
-* @ClassName: Medicine
-* @Version: 1.0
-* @Description: 药品
-*/
-
 @Data
 @Builder
 @NoArgsConstructor

@@ -15,14 +15,6 @@ import com.baomidou.mybatisplus.annotation.TableId;
 import com.baomidou.mybatisplus.annotation.TableName;
 import lombok.NoArgsConstructor;
 
-/**
-* @Author: linyi
-* @Date: 2025-02-26 13:27:06
-* @ClassName: Conversation
-* @Version: 1.0
-* @Description: 对话
-*/
-
 @Data
 @Builder
 @NoArgsConstructor

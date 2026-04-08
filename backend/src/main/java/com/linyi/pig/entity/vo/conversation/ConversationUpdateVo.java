@@ -12,14 +12,6 @@ import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
-/**
-* @Author: linyi
-* @Date: 2025-02-26 13:27:06
-* @ClassName: ConversationUpdateVo
-* @Version: 1.0
-* @Description: 对话修改实体
-*/
-
 @Data
 @Builder
 @NoArgsConstructor

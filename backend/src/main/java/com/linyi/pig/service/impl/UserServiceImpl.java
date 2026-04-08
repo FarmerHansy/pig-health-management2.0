@@ -24,13 +24,6 @@ import java.util.Optional;
 
 import static com.linyi.pig.constant.MedicalConstants.USER_REGISTER_CODE;
 
-/**
- * @Author: linyi
- * @Date: 2025-02-25 17:38:38
- * @ClassName: UserServiceImpl
- * @Version: 1.0
- * @Description: 用户 服务实现层
- */
 @Slf4j
 @Service
 @Transactional(propagation = Propagation.SUPPORTS, readOnly = true)

@@ -9,14 +9,6 @@ import lombok.NoArgsConstructor;
 
 import java.io.Serializable;
 
-/**
-* @Author: linyi
-* @Date: 2025-02-25 17:38:38
-* @ClassName: FeedbackAddVo
-* @Version: 1.0
-* @Description: 反馈新增实体
-*/
-
 @Data
 @Builder
 @NoArgsConstructor

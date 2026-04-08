@@ -23,13 +23,7 @@ import java.util.concurrent.TimeUnit;
 
 import static com.linyi.pig.constant.MedicalConstants.USER_REGISTER_CODE;
 
-/**
- * @Author: linyi
- * @Date: 2025-02-25 17:38:38
- * @ClassName: UserController
- * @Version: 1.0
- * @Description: 用户 控制层
- */
+
 
 @Tag(name = "用户管理模块")
 @Slf4j

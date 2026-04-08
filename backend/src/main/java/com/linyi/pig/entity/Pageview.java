@@ -12,14 +12,6 @@ import lombok.NoArgsConstructor;
 
 import java.io.Serializable;
 
-/**
-* @Author: linyi
-* @Date: 2025-02-25 17:38:38
-* @ClassName: Pageview
-* @Version: 1.0
-* @Description: 浏览量
-*/
-
 @Data
 @Builder
 @NoArgsConstructor

@@ -6,13 +6,6 @@ import org.springframework.stereotype.Component;
 
 import java.util.Date;
 
-/**
- * @Author: linyi
- * @Date: 2025/2/14
- * @ClassName: MyMetaObjectHandler
- * @Version: 1.0
- * @Description: 对数据库每条记录的创建时间和更新时间自动进行填充
- */
 @Component
 public class MyMetaObjectHandler implements MetaObjectHandler {
     /**

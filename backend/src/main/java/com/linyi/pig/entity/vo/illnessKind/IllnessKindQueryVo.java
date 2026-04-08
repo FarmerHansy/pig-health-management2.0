@@ -10,14 +10,6 @@ import lombok.NoArgsConstructor;
 
 import java.io.Serializable;
 
-/**
-* @Author: linyi
-* @Date: 2025-02-25 17:38:38
-* @ClassName: IllnessKindQueryVo
-* @Version: 1.0
-* @Description: 疾病种类查询实体
-*/
-
 @Data
 @Builder
 @NoArgsConstructor

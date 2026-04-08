@@ -7,13 +7,7 @@ import com.linyi.pig.entity.vo.illnessMedicine.IllnessMedicineAddVo;
 import com.linyi.pig.entity.vo.illnessMedicine.IllnessMedicineQueryVo;
 import com.linyi.pig.entity.vo.illnessMedicine.IllnessMedicineUpdateVo;
 
-/**
-* @Author: linyi
-* @Date: 2025-02-25 17:38:38
-* @ClassName: IllnessMedicineService
-* @Version: 1.0
-* @Description: 疾病-药物 服务层
-*/
+
 public interface IllnessMedicineService extends IService<IllnessMedicine> {
     /**
      * 分页查询

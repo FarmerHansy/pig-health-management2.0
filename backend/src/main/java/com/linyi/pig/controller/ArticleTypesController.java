@@ -18,14 +18,6 @@ import java.io.Serializable;
 import java.util.List;
 
 
-/**
-* @Author: linyi
-* @Date: 2025-02-26 08:42:14
-* @ClassName: ArticleTypesController
-* @Version: 1.0
-* @Description: 文章类型 控制层
-*/
-
 @Tag(name = "文章类型管理模块")
 @Slf4j
 @Validated

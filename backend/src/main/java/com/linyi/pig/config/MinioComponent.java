@@ -19,13 +19,6 @@ import java.util.HashMap;
 import java.util.Map;
 import java.util.concurrent.TimeUnit;
 
-/**
- * @Author: linyi
- * @Date: 2025/2/26
- * @ClassName: MinioComponent
- * @Version: 1.0
- * @Description: Minio组件
- */
 @Component
 public class MinioComponent {
 

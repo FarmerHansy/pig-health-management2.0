@@ -9,13 +9,6 @@ import lombok.NoArgsConstructor;
 
 import java.io.Serializable;
 
-/**
- * @Author: linyi
- * @Date: 2025/2/25
- * @ClassName: MeUpdateVo
- * @Version: 1.0
- * @Description: 用户自己修改信息
- */
 @Data
 @Builder
 @NoArgsConstructor

@@ -11,19 +11,16 @@ import io.swagger.v3.oas.annotations.Operation;
 import io.swagger.v3.oas.annotations.tags.Tag;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.*;
 
 import java.io.Serializable;
+import java.util.LinkedHashMap;
 import java.util.List;
+import java.util.Map;
 
-/**
- * @Author: linyi
- * @Date: 2025-02-26 13:27:06
- * @ClassName: ConversationController
- * @Version: 1.0
- * @Description: 对话 控制层
- */
+
 
 @Tag(name = "对话管理模块")
 @Slf4j
@@ -34,6 +31,21 @@ public class ConversationController {
 
     @Autowired
     private ConversationService conversationService;
+
+    @Value("${ai.provider.local-enabled:true}")
+    private boolean localEnabled;
+
+    @Value("${ai.provider.openapi-enabled:false}")
+    private boolean openapiEnabled;
+
+    @Value("${ai.openapi.base-url:https://api.deepseek.com}")
+    private String openapiBaseUrl;
+
+    @Value("${ai.openapi.chat.model:deepseek-chat}")
+    private String openapiChatModel;
+
+    @Value("${ai.ollama.chat.options.model:qwen2.5:7b}")
+    private String ollamaChatModel;
 
     /**
      * 分页查询对话
@@ -148,8 +160,28 @@ public class ConversationController {
      */
     @Operation(summary = "调用大模型API")
     @GetMapping("/getApiLLM")
-    public Result<Conversation> getApiLLM(@RequestParam String prompt) {
-        return Result.success(conversationService.getApiLLM(prompt));
+    public Result<Conversation> getApiLLM(@RequestParam String prompt, @RequestParam(required = false) Long sessionId) {
+        return Result.success(conversationService.getApiLLM(prompt, sessionId));
+    }
+
+    /**
+     * 返回当前启用的AI提供方与模型信息
+     */
+    @Operation(summary = "获取当前AI提供方与模型")
+    @GetMapping("/provider")
+    public Result<Map<String, Object>> getProviderInfo() {
+        Map<String, Object> info = new LinkedHashMap<>();
+        if (openapiEnabled) {
+            info.put("provider", "openapi");
+            info.put("model", openapiChatModel);
+            info.put("baseUrl", openapiBaseUrl);
+        } else if (localEnabled) {
+            info.put("provider", "ollama");
+            info.put("model", ollamaChatModel);
+        } else {
+            info.put("provider", "disabled");
+        }
+        return Result.success(info);
     }
 
 }

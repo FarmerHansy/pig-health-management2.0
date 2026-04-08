@@ -10,13 +10,6 @@ import org.springframework.web.multipart.MultipartFile;
 
 import java.util.Map;
 
-/**
-* @Author: linyi
-* @Date: 2025-02-26 08:42:14
-* @ClassName: FilesService
-* @Version: 1.0
-* @Description: 文件信息 服务层
-*/
 public interface FilesService extends IService<Files> {
     /**
      * 分页查询

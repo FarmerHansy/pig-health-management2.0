@@ -12,14 +12,6 @@ import lombok.NoArgsConstructor;
 import java.io.Serializable;
 import java.util.Date;
 
-/**
-* @Author: linyi
-* @Date: 2025-02-26 08:42:14
-* @ClassName: FilesQueryVo
-* @Version: 1.0
-* @Description: 文件信息查询实体
-*/
-
 @Data
 @Builder
 @NoArgsConstructor

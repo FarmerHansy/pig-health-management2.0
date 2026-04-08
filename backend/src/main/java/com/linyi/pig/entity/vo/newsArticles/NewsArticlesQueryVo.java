@@ -12,14 +12,6 @@ import lombok.NoArgsConstructor;
 import java.io.Serializable;
 import java.util.Date;
 
-/**
-* @Author: linyi
-* @Date: 2025-02-26 08:42:14
-* @ClassName: NewsArticlesQueryVo
-* @Version: 1.0
-* @Description: 新闻资讯查询实体
-*/
-
 @Data
 @Schema(name = "新闻资讯查询实体")
 public class NewsArticlesQueryVo extends PageResponse implements Serializable {

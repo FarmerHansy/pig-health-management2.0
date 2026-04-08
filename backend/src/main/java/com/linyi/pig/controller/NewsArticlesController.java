@@ -18,13 +18,6 @@ import java.io.Serializable;
 import java.util.List;
 
 
-/**
-* @Author: linyi
-* @Date: 2025-02-26 08:42:14
-* @ClassName: NewsArticlesController
-* @Version: 1.0
-* @Description: 新闻资讯 控制层
-*/
 
 @Tag(name = "新闻资讯管理模块")
 @Slf4j

@@ -7,13 +7,7 @@ import com.linyi.pig.entity.vo.feedback.FeedbackAddVo;
 import com.linyi.pig.entity.vo.feedback.FeedbackQueryVo;
 import com.linyi.pig.entity.vo.feedback.FeedbackUpdateVo;
 
-/**
-* @Author: linyi
-* @Date: 2025-02-25 17:38:38
-* @ClassName: FeedbackService
-* @Version: 1.0
-* @Description: 反馈 服务层
-*/
+
 public interface FeedbackService extends IService<Feedback> {
     /**
      * 分页查询

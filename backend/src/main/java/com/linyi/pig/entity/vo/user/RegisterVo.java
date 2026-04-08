@@ -8,13 +8,6 @@ import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
-/**
- * @Author: linyi
- * @Date: 2025/2/25
- * @ClassName: RegisterVo
- * @Version: 1.0
- * @Description: 注册实体
- */
 @Data
 @NoArgsConstructor
 @AllArgsConstructor

@@ -18,13 +18,7 @@ import java.io.Serializable;
 import java.util.List;
 
 
-/**
-* @Author: linyi
-* @Date: 2025-02-25 17:38:38
-* @ClassName: FeedbackController
-* @Version: 1.0
-* @Description: 反馈 控制层
-*/
+
 
 @Tag(name = "反馈管理模块")
 @Slf4j

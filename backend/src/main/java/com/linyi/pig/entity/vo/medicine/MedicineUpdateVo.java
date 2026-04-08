@@ -10,14 +10,6 @@ import lombok.NoArgsConstructor;
 import java.io.Serializable;
 import java.math.BigDecimal;
 
-/**
-* @Author: linyi
-* @Date: 2025-02-25 17:38:38
-* @ClassName: MedicineUpdateVo
-* @Version: 1.0
-* @Description: 药品修改实体
-*/
-
 @Data
 @Builder
 @NoArgsConstructor

@@ -11,14 +11,6 @@ import lombok.NoArgsConstructor;
 import java.io.Serializable;
 import java.util.Date;
 
-/**
-* @Author: linyi
-* @Date: 2025-02-26 08:42:14
-* @ClassName: NewsArticlesUpdateVo
-* @Version: 1.0
-* @Description: 新闻资讯修改实体
-*/
-
 @Data
 @Builder
 @NoArgsConstructor

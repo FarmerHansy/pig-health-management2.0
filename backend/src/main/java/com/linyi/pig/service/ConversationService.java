@@ -9,13 +9,7 @@ import com.linyi.pig.entity.vo.conversation.ConversationUpdateVo;
 
 import java.util.List;
 
-/**
- * @Author: linyi
- * @Date: 2025-02-26 13:27:06
- * @ClassName: ConversationService
- * @Version: 1.0
- * @Description: 对话 服务层
- */
+
 public interface ConversationService extends IService<Conversation> {
     /**
      * 分页查询
@@ -56,4 +50,6 @@ public interface ConversationService extends IService<Conversation> {
     Conversation getOllama(String prompt, Long sessionId);
 
     Conversation getApiLLM(String prompt);
+
+    Conversation getApiLLM(String prompt, Long sessionId);
 }

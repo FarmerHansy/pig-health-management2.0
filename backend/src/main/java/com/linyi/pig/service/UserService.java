@@ -5,13 +5,7 @@ import com.linyi.pig.common.model.PageResult;
 import com.linyi.pig.entity.User;
 import com.linyi.pig.entity.vo.user.*;
 
-/**
-* @Author: linyi
-* @Date: 2025-02-25 17:38:38
-* @ClassName: UserService
-* @Version: 1.0
-* @Description: 用户 服务层
-*/
+
 public interface UserService extends IService<User> {
     /**
      * 分页查询

@@ -18,13 +18,7 @@ import java.io.Serializable;
 import java.util.List;
 
 
-/**
-* @Author: linyi
-* @Date: 2025-02-25 17:38:38
-* @ClassName: IllnessKindController
-* @Version: 1.0
-* @Description: 疾病种类 控制层
-*/
+
 
 @Tag(name = "疾病种类管理模块")
 @Slf4j

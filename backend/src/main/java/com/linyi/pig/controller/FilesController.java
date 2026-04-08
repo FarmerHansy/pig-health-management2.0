@@ -25,13 +25,6 @@ import java.util.Map;
 import java.util.concurrent.TimeUnit;
 
 
-/**
-* @Author: linyi
-* @Date: 2025-02-26 08:42:14
-* @ClassName: FilesController
-* @Version: 1.0
-* @Description: 文件信息 控制层
-*/
 
 @Tag(name = "文件信息管理模块")
 @Slf4j

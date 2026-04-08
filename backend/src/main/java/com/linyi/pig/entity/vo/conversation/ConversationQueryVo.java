@@ -15,14 +15,6 @@ import java.io.Serializable;
 import java.math.BigDecimal;
 import java.util.Date;
 
-/**
-* @Author: linyi
-* @Date: 2025-02-26 13:27:06
-* @ClassName: ConversationQueryVo
-* @Version: 1.0
-* @Description: 对话查询实体
-*/
-
 @Data
 @Builder
 @NoArgsConstructor
