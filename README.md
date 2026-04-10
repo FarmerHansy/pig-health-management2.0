@@ -493,26 +493,4 @@ knowledge:
 - **提供疾病流行趋势预测功能**
 - **真人兽医到场问诊**
 
-## 免责声明与用途说明
 
-本项目用于学习研究、竞赛、课程设计与毕业设计，不具备商用资质，项目内的示例数据与资源仅作演示用途。
-
-## 贡献指南
-
-欢迎提交 PR 或 Issue 来优化本项目。
-
-## 许可证
-
-本项目采用 MIT 许可证。
-
----
-
-如有问题，可以有些邮箱联系我，也可以进行交流，项目不足之处，还请多多担待。
-
-> **作者**: linyi
-> **邮箱**: jingshuihuayue@qq.com  
-> **GitHub**: [PigHealthSmartMedicine](https://github.com/linyshdhhcb/PigHealthSmartMedicine.git)
-
-## 📈 Star History
-
-[![Star History Chart](https://api.star-history.com/svg?repos=linyshdhhcb/PigHealthSmartMedicine&type=Date)](https://star-history.com/#linyshdhhcb/PigHealthSmartMedicine&Date)
