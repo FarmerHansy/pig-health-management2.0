@@ -129,9 +129,9 @@ knife4j:
 # 配置ai
 ai:
   provider:
-    local-enabled: true
-    openapi-enabled: false
-    fallback-enabled: true
+    local-enabled: false
+    openapi-enabled: true
+    fallback-enabled: false
   openapi:
     base-url: https://api.deepseek.com
     api-key: ${DEEPSEEK_API_KEY:sk-c7770f75ff154d42beec5e779e5e70d3}

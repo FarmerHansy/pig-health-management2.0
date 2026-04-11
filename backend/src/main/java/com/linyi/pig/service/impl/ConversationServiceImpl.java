@@ -50,7 +50,7 @@ public class ConversationServiceImpl extends ServiceImpl<ConversationMapper, Con
         @Autowired
         private ConversationMapper conversationMapper;
 
-        @Resource
+        @Autowired(required = false)
         private OllamaConfig ollamaConfig;
 
         @Value("${ai.ollama.chat.options.model}")
@@ -77,10 +77,10 @@ public class ConversationServiceImpl extends ServiceImpl<ConversationMapper, Con
         @Value("${ai.openapi.chat.temperature:0.4}")
         private double openapiChatTemperature;
 
-        @Autowired
+        @Autowired(required = false)
         private ChatClient chatClient;
 
-        @Autowired
+        @Autowired(required = false)
         private VectorStore vectorStore;
 
         private final OkHttpClient httpClient = new OkHttpClient.Builder()
@@ -234,6 +234,10 @@ public class ConversationServiceImpl extends ServiceImpl<ConversationMapper, Con
         }
 
         private String buildKnowledgePrompt(String msg) {
+                if (!localEnabled || vectorStore == null) {
+                        return "你是一名猪病AI医生。请给出清晰、权威且可执行的回答。" +
+                                        "\n问题: " + msg;
+                }
                 var similar = vectorStore.similaritySearch(msg);
                 StringBuilder context = new StringBuilder();
                 for (var d : similar) {
@@ -301,6 +305,9 @@ public class ConversationServiceImpl extends ServiceImpl<ConversationMapper, Con
 
                 long startTime = System.nanoTime();
                 String finalPrompt = buildKnowledgePrompt(msg);
+                if (chatClient == null) {
+                        throw new LinyiException("本地模型未启用或未初始化");
+                }
                 String content = chatClient
                                 .prompt()
                                 .user(finalPrompt)

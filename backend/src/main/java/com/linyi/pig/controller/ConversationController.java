@@ -171,13 +171,13 @@ public class ConversationController {
     @GetMapping("/provider")
     public Result<Map<String, Object>> getProviderInfo() {
         Map<String, Object> info = new LinkedHashMap<>();
-        if (openapiEnabled) {
+        if (localEnabled) {
+            info.put("provider", "ollama");
+            info.put("model", ollamaChatModel);
+        } else if (openapiEnabled) {
             info.put("provider", "openapi");
             info.put("model", openapiChatModel);
             info.put("baseUrl", openapiBaseUrl);
-        } else if (localEnabled) {
-            info.put("provider", "ollama");
-            info.put("model", ollamaChatModel);
         } else {
             info.put("provider", "disabled");
         }

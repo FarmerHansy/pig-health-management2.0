@@ -3,6 +3,7 @@ package com.linyi.pig.service.impl;
 import jakarta.annotation.PostConstruct;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
+import org.springframework.boot.autoconfigure.condition.ConditionalOnProperty;
 import org.springframework.ai.document.Document;
 import org.springframework.ai.reader.TextReader;
 import org.springframework.ai.transformer.splitter.TokenTextSplitter;
@@ -25,6 +26,7 @@ import org.apache.poi.xwpf.extractor.XWPFWordExtractor;
 @Slf4j
 @Component
 @RequiredArgsConstructor
+@ConditionalOnProperty(prefix = "ai.provider", name = "local-enabled", havingValue = "true", matchIfMissing = true)
 class KnowledgeInitializer {
 
     private final VectorStore vectorStore;
