@@ -19,7 +19,6 @@ public class SaTokenConfigure implements WebMvcConfigurer {
     public void addInterceptors(InterceptorRegistry registry) {
         // 配置Sa-Token拦截器，用于权限验证和登录检查
         registry.addInterceptor(new SaInterceptor(handle -> {
-                    System.out.println("--------- flag 2，请求进入了拦截器，访问的 path 是：" + SaHolder.getRequest().getRequestPath());
                     // 跳过OPTIONS请求
                     if ("OPTIONS".equals(SaHolder.getRequest().getMethod())) {
                         return;

@@ -15,7 +15,6 @@ import axios from "~/axios";
 export function addMTravelNotes(params) {
   return axios.post(`/service/mTravelNotes/addMTravelNotes`, params)
     .then(response => {
-      console.log('添加游记响应数据:', response.data);
       return response;
     })
     .catch(error => {

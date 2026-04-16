@@ -29,8 +29,8 @@
 import { ref } from 'vue'
 import { login } from '../../api/user.js'
 
-const userAccount = ref('admin')
-const password    = ref('123456')
+const userAccount = ref('')
+const password    = ref('')
 
 async function handleLogin() {
   if (!userAccount.value.trim()) {

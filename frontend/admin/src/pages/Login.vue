@@ -101,8 +101,8 @@ import { login, getuserInfo } from '@/api/user.js';
 import { ElMessage } from 'element-plus';
 import { useUserStore } from '@/stores/user';
 
-const userAccount = ref('admin');
-const password = ref('123456');
+const userAccount = ref('');
+const password = ref('');
 const captchaInput = ref('');
 const captcha = ref('');
 

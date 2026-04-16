@@ -21,7 +21,6 @@ export function login(params) {
     }]
   })
   .then(response => {
-    console.log('登录响应数据:', response.data);
     return response.data;
   })
   .catch(error => {

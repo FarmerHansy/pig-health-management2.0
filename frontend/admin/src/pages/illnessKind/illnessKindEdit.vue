@@ -66,10 +66,8 @@ const isAddOperation = ref(false);
 const okBtnClick = () => {
   formRef.value.validate((valid) => {
     if (!valid) {
-      console.log('表单验证失败');
       return;
     }
-    console.log('表单验证通过');
 
     spinLoading.value = true;
 

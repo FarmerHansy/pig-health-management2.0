@@ -276,7 +276,6 @@ const updateBtnClick = (id) => {
 const deleteBtnOkClick = (id) => {
   conversationDelete(id)
     .then(response => {
-      console.log('删除响应:', response); // 打印响应
       if (response.data) { // 假设响应包含 data 属性
         ElMessage.success('删除成功');
         getPageList();

@@ -61,14 +61,12 @@ const formData = reactive({
 const formRef = ref(null)
 
 const handleGetCaptcha  = () => {
-  console.log('获取验证码');
 }
 
 const handleSubmit  = () => {
   formRef.value.validate((valid) => {
     if(valid) {
       //这里添加提交表单的逻辑
-      console.log('表单数据',formData);
       ElMessage.success('注册成功')
       
     } else{

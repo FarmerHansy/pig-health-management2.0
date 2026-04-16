@@ -1,6 +1,7 @@
 {
   "compilerOptions": {
-      "baseUrl": "http://127.0.0.1:9999",
+      "ignoreDeprecations": "6.0",
+      "baseUrl": ".", // 添加 baseUrl 以允许非相对路径
       "paths": {
           "@/*": ["src/*"] // 配置 @ 符号指向 src 目录及其子目录
       }
