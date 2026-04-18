@@ -531,7 +531,7 @@ CREATE TABLE `user`  (
 -- ----------------------------
 -- Records of user
 -- ----------------------------
-INSERT INTO `user` VALUES (2, 'admin', '林总', '$2a$10$C4PdFjCdsRW2Q4Mu1x/Q8OzfUYYu09PH27iQfMHFozj05hqPfZ7x6', 18, '男', '13@qq.com', '13511111111', 1, 'https://tse4-mm.cn.bing.net/th/id/OIP-C.Xd88RmKtrH3ORAfPnL3gwAAAAA?w=168&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7', '2025-02-27 23:00:40', '2025-03-30 16:24:10');
-INSERT INTO `user` VALUES (9, 'linyi', '林一', '$2a$10$eRbcqLz4UUnnsv23xbVg1eH7F4jSlwX/M7tiYrZehlHKVrp/he7Ei', NULL, NULL, '13112665250@139.com', NULL, 0, 'https://tse4-mm.cn.bing.net/th/id/OIP-C.Xd88RmKtrH3ORAfPnL3gwAAAAA?w=168&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7', '2025-03-30 16:20:57', '2025-03-30 16:22:45');
+INSERT INTO `user` VALUES (2, 'admin', '林总', '$2a$10$C4PdFjCdsRW2Q4Mu1x/Q8OzfUYYu09PH27iQfMHFozj05hqPfZ7x6', 18, '男', '13@qq.com', '13511111111', 1, 'https://tse4-mm.cn.bing.net/th/id/OIP-C.Xd88RmKtrH3ORAfPnL3gwAAAAA?w=168&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7', '2026-02-27 23:00:40', '2026-03-30 16:24:10');
+INSERT INTO `user` VALUES (9, 'test_user', '测试用户', '$2a$10$eRbcqLz4UUnnsv23xbVg1eH7F4jSlwX/M7tiYrZehlHKVrp/he7Ei', NULL, NULL, '13112665250@139.com', NULL, 0, 'https://tse4-mm.cn.bing.net/th/id/OIP-C.Xd88RmKtrH3ORAfPnL3gwAAAAA?w=168&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7', '2026-03-30 16:20:57', '2026-03-30 16:22:45');
 
 SET FOREIGN_KEY_CHECKS = 1;
